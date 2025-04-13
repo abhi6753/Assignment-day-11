@@ -18,7 +18,7 @@ void Pascal(int row)
     //combination(row,col);
     for(i=1;i<=row;i++)
     {
-        k=1;
+        k=1; // flag
         r =0;
         for(j=1;j<=2*row-1;j++)
         {
@@ -40,12 +40,6 @@ int combination(int n,int r)
 {
     if(n>=r&&r>=0)
      return fact(n)/(fact(r)*fact(n-r));
-    else
-    {
-        printf("please enter n>=r and r>=0");
-        exit(0);
-    }
-    
 }
 int fact(int num)
 {
