@@ -24,7 +24,7 @@ void Pascal(int row)
         {
             if(j>=row+1-i && j<=row-1+i&&k)
             {
-               printf("%2d",combination(i-1,r));
+               printf("%2d",combination(i-1,r)); // i-1 isliye pass kr rhe q ki row wala loop 1 se start kiye hai
                k=0;r++;
             }
             else
